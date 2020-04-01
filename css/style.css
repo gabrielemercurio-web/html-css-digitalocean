@@ -17,6 +17,9 @@ a:hover {
 
 #top-menu .navbar-header {
     padding: 10px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #top-menu .navbar-default .navbar-collapse {
@@ -119,6 +122,15 @@ a:hover {
         display: none;
     }
 
+    #bottom-menu .container-fluid {
+        background-color: transparent;
+        border-bottom: 0px;
+    }
+
+    .navbar-default {
+        background-color: transparent;
+    }
+
     #bottom-menu .sign-up.btn.btn-default {
         display: none;
     }
@@ -131,5 +143,11 @@ a:hover {
 @media screen and (max-width: 1050px) {
     #bottom-menu .navbar-hamburger {
         opacity: 1.0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #top-menu.navbar {
+        padding: 0px 15px;
     }
 }
