@@ -84,7 +84,6 @@ header a:hover {
 #bottom-menu li a {
     font-size: 15px;
     color: #031b4e;
-    position: relative;
 }
 
 #bottom-menu li a:hover {
@@ -94,8 +93,6 @@ header a:hover {
 #bottom-menu .fa-angle-down {
     font-size: 15px;
     color: #031b4e;
-    margin: 4px 4px;
-    position: absolute;
 }
 
 #bottom-menu .navbar-right > li > a {
@@ -109,16 +106,79 @@ header a:hover {
     margin-right: 15px;
 }
 
-#bottom-menu .navbar-nav.navbar-hamburger {
-    float: right;
-    opacity: 0;
+#bottom-menu .navbar-hamburger {
+    display: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    position: absolute;
 }
 
 .navbar-hamburger .fa-bars {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 26px;
+    color: #0069ff;
 }
 
+.hamburger-menu {
+    position: relative;
+}
+
+
+
+/*------------------------------------------ MEDIA QUERY */
+
+@media (max-width: 1050px) {
+    #top-menu .navbar-right {
+        display: none;
+    }
+
+    #bottom-menu .sign-up.btn.btn-default {
+        display: none;
+    }
+
+    #bottom-menu .navbar-left {
+        display: none;
+    }
+
+    #bottom-menu .navbar-hamburger {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        margin-top: 6px;
+    }
+
+    main .jumbotron {
+        background-image: none;
+        background-color: #0069ff;
+        min-height: 800px;
+    }
+
+    .jumbotron #jumbo-left {
+        padding-top: 100px;
+    }
+
+}
+
+
+/* ------------------------------------------ MEDIA 767px */
+
+@media (max-width: 767px) {
+    #top-menu.navbar {
+        padding: 0px 15px;
+    }
+
+#bottom-menu .navbar-brand img {
+    max-width: 130px;
+}
+
+#bottom-menu .container-fluid {
+    height: 60px;
+    border-bottom: 0px;
+}
+
+#bottom-menu .navbar-default {
+    height: 60px;
+}
+}
 
 
 
@@ -158,57 +218,105 @@ header a:hover {
 }
 
 #jumbo-right .bg-white {
-    height: 500px;
+    height: 540px;
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
-    margin-top: 130px;
+    margin-top: 110px;
+    padding: 30px;
+    text-align: center;
+}
+
+#jumbo-right .bg-white h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#jumbo-right .form-control {
+    font-size: 16px;
+    height: 48px;
+    color: rgba(3, 27, 78, 0.8);
+    border-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 transparent;
+}
+
+#jumbo-right .bottone {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    height: 48px;
+    background-color: #0069ff;
+    border: 0;
+}
+
+#jumbo-right .bottone:hover {
+    background-color: #1633ff;
+}
+
+/* #jumbo-right .bg-white p {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+#jumbo-right .bg-white p::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#jumbo-right .bg-white p::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-right: 15px;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 150px auto;
+  grid-gap: 1px;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+.item1, .item3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+#jumbo-right .bottoni-social .bottone-google {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #f2f8ff;
+    border-radius: 3px;
+}
+
+#jumbo-right .bottoni-social .bottone-github {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #f2f8ff;
+    border-radius: 3px;
+}
+
+#jumbo-right .bottoni-social {
+    margin-bottom: 20px;
 }
 
 
 
-/*------------------------------------------ MEDIA QUERY */
-
-@media screen and (max-width: 1050px) {
-    #top-menu .navbar-right {
-        display: none;
-    }
-
-    #bottom-menu .container-fluid {
-        background-color: transparent;
-        border-bottom: 0px;
-    }
-
-    .navbar-default {
-        background-color: transparent;
-    }
-
-    #bottom-menu .sign-up.btn.btn-default {
-        display: none;
-    }
-
-    #bottom-menu .navbar-left {
-        display: none;
-    }
-
-    #bottom-menu .navbar-hamburger {
-        opacity: 1.0;
-    }
-
-    .navbar-nav > li > a {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-}
-
-
-/* ------------------------------------------ MEDIA 767px */
-
-@media screen and (max-width: 767px) {
-    #top-menu.navbar {
-        padding: 0px 15px;
-    }
-}
 
 
 
