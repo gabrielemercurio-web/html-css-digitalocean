@@ -511,7 +511,7 @@ main #jumbo-left p {
 
 
 
-/* ------------------------------------------ #BUILT */
+/* --------------------------------------------- #BUILT */
 
 #built {
     padding: 120px 0px;
@@ -539,7 +539,40 @@ main #jumbo-left p {
 
 
 
+/* ------------------------------------------- #WORLD-MAP */
 
+#world-map {
+    padding: 120px 0px;
+    background: #031b4e url('https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#world-map h2 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#world-map .grid-container {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 15px 20px;
+}
+
+#world-map .grid-container:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#world-map .grid-container > div {
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+}
+
+#world-map .grid-container .item3 {
+    text-align: right;
+}
 
 
 
