@@ -1,5 +1,5 @@
 
-/* --------------------------------------------- HEADER */
+/* ------------------------------------------- <HEADER> */
 header a {
     color: #5b6987;
     text-decoration: none;
@@ -125,7 +125,7 @@ header a:hover {
 
 
 
-/* -------------------------------------------- JUMBOTRON */
+/* ------------------------------------------ .JUMBOTRON */
 
 .jumbotron {
     background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
@@ -338,7 +338,7 @@ main #jumbo-left p {
 
 
 
-/* --------------------------------------- SEZIONE LOGHI */
+/* ----------------------------------------- #BUSINESS */
 
 #business {
     padding: 50px;
@@ -367,10 +367,10 @@ main #jumbo-left p {
 
 
 
-/* ------------------------------------- SEZIONE DEPLOY */
+/* ----------------------------------------- #DEPLOY */
 
 #deploy {
-    padding: 120px 0px;
+    padding: 120px 0px 80px;
 }
 
 #deploy .deploy-titolo {
@@ -433,6 +433,106 @@ main #jumbo-left p {
     font-weight: 400;
     color: #031b4eb3;
     margin: 20px 0px 60px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* -------------------------------------- #DEVELOPERS */
+
+#developers {
+    background-color: #f3f5f9;
+    padding: 120px 0px 80px;
+    text-align: center;
+}
+
+#developers .developers-titolo h2 {
+    font-weight: bold;
+    color: #031b4e;
+}
+
+#developers .developers-titolo p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #031b4eb3;
+    margin: 30px 0px 60px;
+}
+
+#developers .carosello .arrow-left,
+#developers .carosello .arrow-right {
+    font-size: 32px;
+    font-weight: 200;
+    padding-top: 25%;
+}
+
+
+/* --------------------------- #developers Media Query */
+@media all and (max-width: 767px) {
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+}
+/* -------------------------------------------------- */
+
+
+#developers ul {
+    padding-inline-start: 0px;
+}
+
+#developers li {
+    display: inline-block;
+    padding: 4px 4px;
+    border: 1.5px solid #1167e7;
+    border-radius: 50%;
+}
+
+#developers li:nth-child(2) {
+    display: inline-block;
+    padding: 4px 4px;
+    border: 1.5px solid #1167e7;
+    border-radius: 50%;
+    background-color: #1167e7;
+}
+
+#developers li:not(:last-of-type) {
+    margin-right: 5px;
+}
+
+#developers .developers-didascalia p {
+    font-size: 16px;
+    color: #031b4eb3;
+    margin: 30px 0px 50px;
+}
+
+#developers .developers-didascalia {
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------ #BUILT */
+
+#built {
+    padding: 120px 0px;
+}
+
+#built .icon-built img {
+    height: 40px;
+    margin-top: 50px;
+}
+
+#built .icon-built p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #031b4eb3;
+    margin: 20px 0px;
+    letter-spacing: 0.5px;
+}
+
+#built .icon-built a {
+    font-size: 18px;
+    font-weight: 400;
     letter-spacing: 0.5px;
 }
 
