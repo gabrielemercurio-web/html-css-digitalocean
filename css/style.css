@@ -658,11 +658,86 @@ main #jumbo-left p {
 
 
 
+/* ------------------------------------------------- #CTA  */
+
+#cta {
+    background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    background-color: #0069ff;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding: 70px 0;
+}
+
+#cta h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
 
 
 
 
+/* ----------------------------------------------- #FOOTER */
 
+footer {
+    padding: 100px;
+    background-color: #020d27;
+}
+
+footer ul li:first-child {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    color: #ffffff80;
+    padding: 5px 0;
+}
+
+
+
+/* ------------------------------------------ @MEDIA FOOTER */
+
+@media (max-width: 991px) {
+    footer ul {
+        margin-bottom: 40px;
+    }
+}
+/* ---------------------------------------------------- */
+
+
+footer hr {
+    border-color: #ffffff40;
+    margin-top: 50px;
+}
+
+footer img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+footer span {
+    color: #ffffff80;
+    margin-left: 15px;
+}
+
+footer .sub-footer a {
+    font-size: 24px;
+    color: #ffffff80;
+    margin-right: 20px;
+    float: right;
+}
+
+footer .sub-footer {
+    padding-top: 20px;
+}
 
 
 
